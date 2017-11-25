@@ -1,0 +1,497 @@
+/* General Settings */
+
+html {
+  height: 100%
+}
+
+body, #root, .App {
+  height: inherit;
+}
+
+.blue {
+  background-color: #22A7F0
+}
+
+.white {
+  background-color: #fbfbfb
+}
+
+.instagram-white {
+  background: #fff;
+}
+
+.black {
+  background: #24292e;
+}
+
+.red {
+  background-color: #EC644B
+}
+
+.color-blue {
+  color: #22A7F0
+}
+
+.color-white {
+  color: #fbfbfb
+}
+
+.color-red {
+  color: #EC644B
+}
+
+.color-yellow {
+  color: #FABE58;
+}
+
+.color-purple {
+  color: #9b59b6;
+}
+
+.color-orange {
+  color: #e67e22;
+}
+
+.border-white {
+  border-color: white;
+}
+
+/* Fonts */
+
+@font-face {
+   font-family: Billabong;
+   src: url('./fonts/Billabong.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Navbar properties */
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0px 2px rgba(0,0,0,.1)
+}
+
+.navbar:after {
+  background: linear-gradient(to right, #EC644B 33%, #DADFE1 33%, #DADFE1 66%, #22A7F0 66%, #22A7F0 100%);
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: 0;
+  top: 55px;
+}
+
+.navbar-light .navbar-brand {
+  letter-spacing: 3px;
+  font-weight: 400;
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+      0% {
+
+        color: #d35400;
+      }
+
+      10% {
+
+        color: #8e44ad;
+      }
+
+      20% {
+
+        color: #1abc9c;
+      }
+
+      30% {
+
+        color: #d35400;
+      }
+
+      40% {
+
+        color: #22A7F0;
+      }
+
+      50% {
+
+        color: #34495e;
+      }
+
+      60% {
+
+        color: #22A7F0;
+      }
+
+      70% {
+
+        color: #2980b9;
+      }
+      80% {
+
+        color: #f1c40f;
+      }
+
+      90% {
+
+        color: #2980b9;
+      }
+
+      100% {
+
+        color: pink;
+      }
+    }
+
+
+/* Container properties */
+
+.container {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 1900px;
+}
+
+
+.container-row {
+  flex: 1;
+}
+
+.container-column {
+  padding: 10px;
+  display: flex;
+}
+
+/* Cards */
+
+.card-header {
+  background: #fbfbfb;
+  padding-right: 5px;
+  font-weight: 300;
+}
+
+.card-header > Button {
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 14px;
+  height: 5px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  float: right;
+}
+
+.card-body {
+  display: flex;
+  padding: 0;
+}
+
+.card-body-left-panel {
+  flex: 1;
+  border-right: 1px solid #ddd;
+  display: flex;
+}
+
+.card-body-right-panel {
+  flex: 2;
+  background: #22313F;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Presentation Card */
+
+.presentation-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0px 2px rgba(0,0,0,.1);
+  flex: 1;
+}
+
+/* Console */
+
+.console-line {
+  display: flex;
+  padding: 10px;
+  font-weight: 300;
+  flex: 1 1 auto;
+}
+
+.caret {
+  border-right: .15em solid #fbfbfb;
+  animation:
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fbfbfb; }
+}
+
+.console-host, .console-error {
+  color: #2ECC71;
+  margin-right: 7px;
+  font-weight: bold;
+}
+
+.console-command, .console-response {
+  color: #fbfbfb
+}
+
+.console-error {
+  color: #F03434
+}
+
+/* browser */
+
+.browser {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.nav-link > i {
+  padding-right: 5px;
+}
+
+.tab-content {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-content > .active {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+
+.browser-url {
+  flex: 1;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  padding-top: 5px;
+  background: #fbfbfb;
+}
+
+.ion-arrow-left-c, .ion-arrow-right-c, .ion-refresh, .ion-social-linkedin {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.url {
+  flex: 25
+}
+
+.browser-content {
+  flex: 6.5;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-content-header {
+  flex: 1;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.browser-content-header-brand {
+    flex: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    font-family: Billabong;
+    font-size: 25px;
+}
+
+.browser-content-header-brand-github {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-family: Roboto;
+  font-size: 17px;
+}
+
+.browser-content-header > i {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 25px;
+}
+
+.browser-content-header > a {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+
+
+
+
+.browser-content-site {
+  flex: 6;
+  display: flex;
+}
+
+.browser-content-left-panel {
+  flex: 1;
+}
+
+.browser-content-middle-panel {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram-profile {
+  flex: 1;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.instagram-profile-picture {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-profile-picture > img {
+  height: 70%;
+  width: 60%;
+}
+
+
+
+.instagram-profile-description {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram-username {
+  flex: 1;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.instagram-stats {
+  flex: 1;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.subscribers-count {
+  font-weight: bolder;
+  padding-right: 3px;
+}
+
+.instagram-short-description {
+  flex: 1;
+  font-size: 13px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.instagram-short-description > i {
+  padding-right: 5px;
+}
+
+.instagram-short-description > span {
+  padding-right: 5px;
+}
+
+.instagram-photo-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram-photo-list-one {
+  flex: 1;
+  display: flex;
+}
+
+.instagram-framework-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-framework-photo > i {
+  font-size: 50px;
+}
+
+.browser-content-right-panel {
+  flex: 1;
+}
+
+
+.nav-tabs, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-bottom: 0px;
+  flex: 1;
+}
+
+/* Footer properties */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  display: flex;
+  background: #fbfbfb
+}
+
+
+.start-menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+}
+
+.start-menu > i {
+  color: #fbfbfb;
+  font-size: 35px;
+}
+
+.right-menu {
+  flex: 17;
+
+}
