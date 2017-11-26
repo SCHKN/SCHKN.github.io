@@ -465,6 +465,107 @@ body, #root, .App {
   flex: 1;
 }
 
+.browser-content-bio-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.browser-content-picture {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.browser-content-picture > img {
+  width: 50%;
+}
+
+.browser-content-username {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.browser-content-bio {
+  flex: 2;
+  font-size: 12px;
+}
+
+.browser-content-bio > i {
+  margin-right: 7px;
+  margin-left: 5px;
+}
+
+.browser-content-edit {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.browser-content-edit > button {
+  background: #eff3f6;
+  color: black;
+}
+
+.browser-content-location {
+  flex: 1;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.browser-content-location > i {
+  margin-right: 7px;
+  margin-left: 5px;
+}
+
+.browser-content-repo-panel {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-content-repo-header {
+  flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+}
+
+.browser-content-repo-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  font-size: 15px;
+
+}
+
+.github-selected {
+  border-bottom: 2px solid #e36209;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.browser-content-repo-title > .badge {
+  margin-left: 5px;
+  background: rgba(27,31,35,0.08);
+  color: #586069;
+}
+
+.browser-content-repo-content {
+  flex: 4;
+}
+
+
 /* Footer properties */
 
 .footer {

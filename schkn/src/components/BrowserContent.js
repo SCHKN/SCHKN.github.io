@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Badge } from 'reactstrap';
 import { Tooltip } from 'reactstrap';
 
 export default class BrowserContent extends React.Component {
@@ -81,14 +81,61 @@ export default class BrowserContent extends React.Component {
         <div className="browser-content">
           <div className="browser-content-header black">
             <i class="devicon-github-plain color-white border-white"></i>
-          <div className="browser-content-header-brand-github color-white">
+            <div className="browser-content-header-brand-github color-white">
               GitHub
             </div>
             <a href="https://www.instagram.com/accounts/login" className="alert-link color-white">Log In</a>
             <a href="https://www.instagram.com/accounts/emailsignup/" className="alert-link color-white">Sign Up</a>
           </div>
           <div className="browser-content-site">
-
+            <div className="browser-content-bio-panel">
+              <div className="browser-content-picture">
+                <img src={require('../images/man.png')} />
+              </div>
+              <div className="browser-content-username">
+                <span>SCHKN</span>
+              </div>
+              <div className="browser-content-bio">
+                <i class="ion-social-nodejs color-red"></i>
+                your js hero
+                <i class="ion-pizza color-orange"></i>
+                your pizza lover
+                <i class="ion-wand color-blue"></i>
+                brings magic to your life
+              </div>
+              <div className="browser-content-edit">
+                <Button className="white" size="sm">Edit Profile</Button>
+              </div>
+              <div className="browser-content-location">
+                <i class="ion-location color-red"></i>
+                Luxembourg
+              </div>
+            </div>
+            <div className="browser-content-repo-panel">
+              <div className="browser-content-repo-header">
+                <div className="browser-content-repo-title">
+                  Overview
+                </div>
+                <div className="browser-content-repo-title github-selected">
+                  Repositories
+                  <Badge color="secondary">3</Badge>
+                </div>
+                <div className="browser-content-repo-title">
+                  Stars
+                  <Badge color="secondary">2.5k</Badge>
+                </div>
+                <div className="browser-content-repo-title">
+                  Followers
+                  <Badge color="secondary">25</Badge>
+                </div>
+                <div className="browser-content-repo-title">
+                  Following
+                  <Badge color="secondary">12</Badge>
+                </div>
+              </div>
+              <div className="browser-content-repo-content">
+              </div>
+            </div>
           </div>
         </div>
       );
